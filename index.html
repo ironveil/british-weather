@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Weather</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/css/index.min.css">
+
+    </head>
+<body>
+
+    <div class="main">
+
+        <!-- Search -->
+        <div class="search">
+            <div class="searchArea">
+                <p class="title">Search:</p>
+                <input type="text" id="search">
+                <button id="submit" onclick=findCity()>Go!</button>
+            </div>
+        </div>  
+
+        <!-- Results -->
+        <div class="results">
+            <p><span id="city">City Name</span> <span id="region">Region</span></p>
+            <p id="temp">Temperature</p>
+            <p id="feelsLike">Feels Like</p>
+            <p id="humidity">Humidity</p>
+        </div>
+
+    </div>
+
+    <!-- Weather Script -->
+    <script src="/src/js/weather.js"></script>
+    
+</body>
+</html>
