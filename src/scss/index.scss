@@ -23,6 +23,10 @@
         background-color: #e5e5e5;
         height: 100vh;
 
+        .searchArea {
+            width: 80%;
+        }
+
         p.title {
             font-size: 48pt;
             padding-bottom: 10px;
@@ -44,10 +48,14 @@
             &:focus {
                 border: 2px solid  #14213d;
             }
+
+            &::selection {
+                background-color: #fca311;
+            }
         }
 
         button#submit {
-            width: 10vw;
+            width: 8vw;
             min-width: 50px;
             height: 8vh;
             min-height: 50px;
@@ -73,5 +81,34 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        .resultsArea {
+            width: 80%;
+        }
+
+        p {
+            font-size: 16pt;
+            padding: 4px 0;
+
+            span {
+                font-weight: bold;
+            }
+        }
+
+        p#city {
+            font-size: 48pt;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    p {
+        font-size: 8pt;
     }
 }
