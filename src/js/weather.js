@@ -21,7 +21,6 @@ function findCity() {
 
             // Exports it to correct elements
             var cityName = document.getElementById("city").innerHTML = data.name;
-            var region = document.getElementById("region").innerHTML = data.sys.country;
             var temperature = document.getElementById("temp").innerHTML = `${Math.round(data.main.temp)}°C`;
             var feelsLike = document.getElementById("feelsLike").innerHTML = `${Math.round(data.main.feels_like)}°C`;
             var humidity = document.getElementById("humidity").innerHTML = "Humidity: " + data.main.humidity + "%";
