@@ -21,9 +21,14 @@
         <!-- Search -->
         <div class="search">
             <div class="searchArea">
+                <a href="/index.html" class="home">BritishWeather   </a>
                 <p class="title">Search:</p>
                 <input type="text" id="search">
                 <button id="submit" onclick=findCity()>Go!</button>
+
+                <div class="error">
+                    <p class="errormsg">Error, wrong city entered</p>
+                </div>
             </div>
         </div>  
 
@@ -38,10 +43,6 @@
             </div>
         </div>
 
-    </div>
-
-    <div class="footer">
-        <p>Weather fetched from <a href="https://openweathermap.org/">OpenWeatherMap</a>.</p>
     </div>
 
     <!-- Weather Script -->
