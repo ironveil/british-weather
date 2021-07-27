@@ -33,16 +33,25 @@
             width: 80%;
 
             // Home button on nav
-            a.home {
+            p.nav {
                 position: absolute;
                 top: $mnav;
-                text-decoration: none;
-                color: $black;
-                font-size: $ftext;
-                transition: $trans;
                 
-                &:hover {
-                    color: $yellow;
+                a {
+                    transition: $trans;
+                    color: $black;
+                    text-decoration: none;
+                    font-size: $ftextminor;
+
+                    &:hover {
+                        color: $yellow;
+                    }
+
+                    &:nth-of-type(1) {
+                        font-weight: 600;
+                        font-size: $ftext;
+                        padding-right: 24px;
+                    }
                 }
             }
 
@@ -67,6 +76,7 @@
     
                 &:focus {
                     border: 2px solid $blue;
+                    padding: 0 6px;
                 }
     
                 &::selection {
@@ -96,9 +106,16 @@
             // Error message
             .error {
                 background-color: $red;
-                padding: 8px;
+                color: $white;
+                padding: 0 8px;
                 margin: 4px 0;
                 width: 30vw;
+                height: 8vh;
+                line-height: 8vh;
+
+                &.hidden {
+                    visibility: hidden;
+                }
             }
         }
     }
