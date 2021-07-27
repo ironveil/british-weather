@@ -11,16 +11,16 @@ function findCity() {
     xhr.send()
     xhr.onload = () => {
         if (xhr.status === 404) {
-            alert("Wrong city");
-        } else if (xhr.status === 401) {
-            alert("API Key incorrect");
+            document.getElementById("error").classList.remove("hidden");
         } else {
+            document.getElementById("error").classList.add("hidden");
             var data = JSON.parse(xhr.response);
             console.log("Success");
             console.log(data);
 
             // Exports it to correct elements
             var cityName = document.getElementById("city").innerHTML = data.name;
+            var weather = document.getElementById("weather").innerHTML = data.weather[0].description;
             var temperature = document.getElementById("temp").innerHTML = `${Math.round(data.main.temp)}°C`;
             var feelsLike = document.getElementById("feelsLike").innerHTML = `${Math.round(data.main.feels_like)}°C`;
             var humidity = document.getElementById("humidity").innerHTML = data.main.humidity + "%";
