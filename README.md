@@ -1,5 +1,5 @@
 # BritishWeather
-BritishWeather is a minimal weather app based around the United Kingdom.
+BritishWeather is a minimal weather app based around the United Kingdom. You can check it out [here](https://britishweather.netlify.app)
 
 ![Screenshot](/src/img/screenshot.png)
 
