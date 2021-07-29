@@ -53,6 +53,30 @@
                     }
                 }
             }
+
+            p.title {
+                font-size: $ftitle;
+                font-weight: bold;
+            }
+
+            button.github {
+                width: 8vw;
+                min-width: 100px;
+                height: 8vh;
+                min-height: 50px;
+                background-color: $yellow;
+                font-size: $ftextminor;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                transition: $trans;
+                margin: 16px 0;
+
+                &:hover {
+                    background-color: $blue;
+                    color: $white;
+                }
+            }
         }
     }
 
