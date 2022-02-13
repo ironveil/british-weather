@@ -1,5 +1,5 @@
 // API key
-const apiKey = "b9f3b63d8730a51c49be3f9aaac19f8e";
+const apiKey = "cea15d259b519b0d92c399ada2fcc652";
 const xhr = new XMLHttpRequest;
 
 // Grab search query
@@ -7,7 +7,7 @@ function findCity() {
     var search = document.getElementById("search").value;
 
     // Checks if it exists
-    xhr.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=${search},GB&appid=${apiKey}&units=metric`)
+    xhr.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=${search},uk&appid=${apiKey}&units=metric`)
     xhr.send()
     xhr.onload = () => {
         if (xhr.status === 404) {
