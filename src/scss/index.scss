@@ -28,6 +28,8 @@
         color: $fdark;
 
         // Focused
+        transition: none;
+
         &:focus {
 
             // Sizing

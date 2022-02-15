@@ -37,6 +37,9 @@ $trans: 150ms ease-in;
     font-family: 'Fira Sans', sans-serif;
     font-size: $ftextminor;
     color: $fdark;
+
+    // Transition
+    transition: $trans;
 }
 
 // Center Class

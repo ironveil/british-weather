@@ -36,9 +36,7 @@
                     // Font
                     text-decoration: none;
         
-                    // Hover
-                    transition: $trans;
-        
+                    // Hover        
                     &:hover {
                         color: $yellow;
                     }
@@ -72,8 +70,6 @@
                 cursor: pointer;
 
                 // Hover
-                transition: $trans;
-
                 &:hover {
                     background-color: $dark;
                     color: $flight;
