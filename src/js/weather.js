@@ -30,3 +30,10 @@ function findCity() {
         }
     }
 }
+
+// Searches on enter key press
+$("#search").keyup(function(event) {
+    if (event.keyCode === 13) {
+        findCity();
+    }
+});
