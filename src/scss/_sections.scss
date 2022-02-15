@@ -1,0 +1,134 @@
+// Main Area
+.main {
+    
+    // Sizing
+    width: 100vw;
+    height: 100vh;
+
+    // Grid
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    // Left Area
+    .left {
+
+        // Sizing
+        width: 50vw;
+
+        // Theming
+        background-color: $layer-light;
+
+        // Wrapper
+        .wrapper {
+
+            // Sizing
+            width: 80%;
+
+            // Nav
+            p.nav {
+
+                // Positioning
+                position: absolute;
+                top: $mnav;
+        
+                // Links
+                a {
+                    // Font
+                    text-decoration: none;
+        
+                    // Hover
+                    transition: $trans;
+        
+                    &:hover {
+                        color: $yellow;
+                    }
+        
+                    // Home
+                    &:nth-of-type(1) {
+        
+                        // Positioning
+                        padding-right: 24px;
+        
+                        // Font
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            // Button
+            button {
+
+                // Sizing
+                width: 8vw;
+                min-width: 50px;
+                height: $barsize;
+
+                // Theming
+                background-color: $yellow;
+                border: none;
+                outline: none;
+
+                // Cursor
+                cursor: pointer;
+
+                // Hover
+                transition: $trans;
+
+                &:hover {
+                    background-color: $dark;
+                    color: $flight;
+                }
+
+                // GitHub Button
+                &.github {
+                    margin-top: 10px;
+                }
+            }
+
+            // Title
+            p.title {
+
+                // Positioning
+                padding-bottom: 10px;
+
+                // Font
+                font-size: $ftitle;
+                font-weight: bold;
+
+            }
+        }
+    }
+
+    .right .wrapper {
+        width: 80%;
+    }
+}
+
+// Mobile Design
+
+// Dark Mode
+@media (prefers-color-scheme: dark) {
+
+    // Main Area
+    .main {
+        background-color: $dark;
+
+        // Left Area
+        .left {
+            background-color: $layer-dark;
+        }
+    }
+
+    button {
+
+        // Font
+        color: $fdark;
+
+        &:hover {
+
+            // Theming
+            background-color: $white !important;
+            color: $fdark !important;
+        }
+    }
+}

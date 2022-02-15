@@ -2,39 +2,60 @@
 
 // Colors
 $white: #ffffff;
-$grey: #e5e5e5;
 $yellow: #fca311;
 $red: #F00314;
-$blue: #14213d;
-$black: #000000;
+$dark: #121212;
+
+// Layers
+$layer-light: rgba(0,0,0,0.1);
+$layer-dark: rgba(255,255,255,0.1);
 
 // Font
 $ftitle: 48pt;
-$ftext: 18pt;
-$ftextminor: 14pt;
+$ftextminor: 16pt;
+$flight: #ffffff;
+$fdark: #010101;
 
 // Sizing
 $mnav: 4vh;
+$barsize: 55px;
 
 // Transition
 $trans: 150ms ease-in;
 
-// Resets everything to default
+// Reset
 *,
 *::before,
 *::after {
+
+    // Sizing
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
-    // Good font
+    // Font
     font-family: 'Fira Sans', sans-serif;
+    font-size: $ftextminor;
+    color: $fdark;
 }
 
-// Main Area
-.main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100vw;
-    height: 100vh;
+// Center Class
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Hidden
+.hidden {
+    display: none;
+}
+
+// Dark Mode
+@media (prefers-color-scheme: dark) {
+
+    // Font Color
+    * {
+        color: $flight;
+    }
 }

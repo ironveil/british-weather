@@ -23,12 +23,14 @@
     <div class="main">
 
         <!-- Search -->
-        <div class="search">
-            <div class="searchArea">
+        <div class="left center">
+            <div class="wrapper">
+
+                <!-- Navbar -->
                 <p class="nav"><a href="/index.html">BritishWeather</a> <a href="/about.html">About</a></p>
                 <p class="title">Search:</p>
                 <input type="text" id="search">
-                <button id="submit" onclick=findCity()>Go!</button>
+                <button onclick=findCity()>Go!</button>
 
                 <div id="error" class="error hidden">
                     <p class="errormsg">Error, wrong city entered!</p>
@@ -37,8 +39,8 @@
         </div>  
 
         <!-- Results -->
-        <div class="results">
-            <div class="resultsArea">
+        <div class="right center">
+            <div class="wrapper">
                 <p id="city">Nowhere</p>
                 <p>The weather is <span id="weather">existing</span></p>
                 <p>The temperature is <span id="temp">0°C</span></p>
