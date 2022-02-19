@@ -105,8 +105,6 @@
     }
 }
 
-// Mobile Design
-
 // Dark Mode
 @media (prefers-color-scheme: dark) {
 
@@ -132,5 +130,42 @@
             background-color: $white !important;
             color: $fdark !important;
         }
+    }
+}
+
+// Mobile
+@media only screen and (max-width: 600px) {
+
+    .main {
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.25fr 1fr;
+
+        .left {
+            width: 100%;
+
+            p.title {
+                font-size: 24pt !important;
+            }
+
+            input {
+                width: 70% !important;
+            }
+            button {
+                width: 25% !important;
+            }
+        }
+    }
+    .error {
+        width: 97% !important;
+    }
+    p.nav {
+        position: absolute;
+        top: $mnav;
+        //left: $mnav;
+    }
+
+    .right {
+        margin-top: 30px;
     }
 }
