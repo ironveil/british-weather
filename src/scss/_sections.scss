@@ -105,18 +105,20 @@
     }
 }
 
-// Mobile Design
-
 // Dark Mode
 @media (prefers-color-scheme: dark) {
 
     // Main Area
     .main {
-        background-color: $dark;
+        background-color: $dark !important;
 
         // Left Area
         .left {
-            background-color: $layer-dark;
+            background-color: $layer-dark !important;
+        }
+
+        .right {
+            background-color: $dark !important;
         }
     }
 
@@ -132,5 +134,54 @@
             background-color: $white !important;
             color: $fdark !important;
         }
+    }
+}
+
+// Mobile
+@media only screen and (max-width: 600px) {
+
+    .main {
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        background-color: $white;
+
+        .left {
+            width: 100%;
+            height: 40vh;
+            background-color: $layer-light;
+
+            p.title {
+                font-size: 24pt !important;
+            }
+
+            input {
+                width: 70% !important;
+            }
+            button {
+                width: 25% !important;
+            }
+        }
+
+        .right {
+            padding-bottom: 25px;
+            //background-color: $white !important;
+        }
+    }
+    .error {
+        width: 97% !important;
+    }
+    p.nav {
+        position: absolute;
+        top: $mnav;
+        //left: $mnav;
+    }
+
+    .right {
+        margin-top: 30px;
+    }
+
+    body {
+        background-color: $dark;
     }
 }
