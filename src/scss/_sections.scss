@@ -140,6 +140,7 @@
         height: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 1.25fr 1fr;
+        max-height: 900px;
 
         .left {
             width: 100%;
