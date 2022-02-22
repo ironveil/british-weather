@@ -139,11 +139,11 @@
     .main {
         height: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: 1.25fr 1fr;
-        max-height: 800px;
+        grid-template-rows: auto auto;
 
         .left {
             width: 100%;
+            height: 40vh;
 
             p.title {
                 font-size: 24pt !important;
@@ -155,6 +155,10 @@
             button {
                 width: 25% !important;
             }
+        }
+
+        .right {
+            padding-bottom: 25px;
         }
     }
     .error {
