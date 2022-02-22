@@ -110,11 +110,15 @@
 
     // Main Area
     .main {
-        background-color: $dark;
+        background-color: $dark !important;
 
         // Left Area
         .left {
             background-color: $layer-dark;
+        }
+
+        .right {
+            background-color: $dark !important;
         }
     }
 
@@ -140,10 +144,12 @@
         height: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
+        background-color: $white;
 
         .left {
             width: 100%;
             height: 40vh;
+            background-color: $layer-light !important;
 
             p.title {
                 font-size: 24pt !important;
@@ -159,6 +165,7 @@
 
         .right {
             padding-bottom: 25px;
+            //background-color: $white !important;
         }
     }
     .error {

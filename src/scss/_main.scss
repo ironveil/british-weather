@@ -54,11 +54,19 @@ $trans: 150ms ease-in;
     display: none;
 }
 
+body {
+    background-color: $white !important;
+}
+
 // Dark Mode
 @media (prefers-color-scheme: dark) {
 
     // Font Color
     * {
         color: $flight;
+    }
+
+    body {
+        background-color: $dark !important;
     }
 }
