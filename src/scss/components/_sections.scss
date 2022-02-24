@@ -14,6 +14,7 @@
 
         // Sizing
         width: 50vw;
+        $barsize: 55px;
 
         // Theming
         background-color: $layer-light;
@@ -54,8 +55,34 @@
             }
 
             // Input
-            input:focus {
-                border: 2px solid $white;
+            input {
+
+                // Sizing
+                width: 30vw;
+                min-width: 200px;
+                height: $barsize;
+                padding: 0 8px;
+
+                // Theming
+                background-color: $white;
+                border: none;
+                outline: none;
+
+                // Font
+                font-size: $ftextminor;
+                color: $fdark;
+
+                // Focused
+                transition: none;
+
+                &:focus {
+
+                    // Sizing
+                    padding: 0 6px;
+
+                    // Theming
+                    border: 2px solid $dark;
+                }
             }
 
             // Button
@@ -86,6 +113,24 @@
                 }
             }
 
+            // Error Message
+            .error {
+
+                // Sizing
+                width: 30vw;
+                min-width: 200px;
+                height: $barsize;
+                padding: 0 8px;
+                margin: 4px 0;
+
+                // Theming
+                background-color: $red;
+
+                // Font
+                color: $flight;
+                line-height: $barsize;
+            }
+
             // Title
             p.title {
 
@@ -100,8 +145,36 @@
         }
     }
 
-    .right .wrapper {
-        width: 80%;
+    .right {
+
+        .wrapper {
+
+            // Sizing 
+            width: 80%;
+
+            // Text
+            p {
+        
+                // Sizing
+                padding: 4px;
+        
+                // Highlighted
+                span {
+                    font-weight: bold;
+                }
+        
+                // City
+                &#city {
+                    
+                    // Sizing
+                    padding-bottom: 10px;
+        
+                    // Font
+                    font-size: $ftitle;
+                    font-weight: bold;
+                }
+            }
+        }
     }
 }
 
@@ -115,24 +188,37 @@
         // Left Area
         .left {
             background-color: $layer-dark !important;
+
+            // Search Bar
+            input {
+
+                // Theming
+                background-color: $dark !important;
+                color: $flight !important;
+
+                // Focused
+                &:focus {
+                    border: 2px solid $white;
+                }
+            }
+
+            // Button
+            button {
+
+                // Font
+                color: $fdark;
+
+                &:hover {
+
+                    // Theming
+                    background-color: $white !important;
+                    color: $fdark !important;
+                }
+            }
         }
 
         .right {
             background-color: $dark !important;
-        }
-    }
-
-    // Button
-    button {
-
-        // Font
-        color: $fdark;
-
-        &:hover {
-
-            // Theming
-            background-color: $white !important;
-            color: $fdark !important;
         }
     }
 }

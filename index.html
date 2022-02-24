@@ -11,14 +11,13 @@
     <title>BritishWeather</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/src/css/index.min.css">
+    <link rel="stylesheet" href="/src/css/page.min.css">
 
     <!-- Icon -->
     <link rel="shortcut icon" href="/src/img/icon.png" type="image/x-icon">
 
     <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
 </head>
 <body>
 
@@ -31,10 +30,13 @@
 
                 <!-- Navbar -->
                 <p class="nav"><a href="/index.html">BritishWeather</a> <a href="/about.html">About</a></p>
+
+                <!-- Search -->
                 <p class="title">Search:</p>
                 <input type="text" id="search">
                 <button onclick=findCity()>Go!</button>
 
+                <!-- Error -->
                 <div id="error" class="error hidden">
                     <p class="errormsg">Error, wrong city entered!</p>
                 </div>
@@ -53,14 +55,12 @@
                 <p>Clouds cover <span id="clouds">0%</span> of the sky</p>
             </div>
         </div>
-
     </div>
 
     <!-- Weather Script -->
     <script src="/src/js/weather.js"></script>
 
     <!-- Cloudflare Analytics -->
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "77cf78ae4ab24aa68d5967b9628d7890"}'></script>
-    
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "261ad72014b94273be0af9f21a154f6a"}'></script>
 </body>
 </html>

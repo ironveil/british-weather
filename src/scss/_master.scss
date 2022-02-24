@@ -42,8 +42,15 @@ $trans: 150ms ease-in;
     transition: $trans;
 }
 
+// Body
+body {
+    background-color: $white !important;
+}
+
 // Center Class
 .center {
+
+    // Positioning
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,9 +61,6 @@ $trans: 150ms ease-in;
     display: none;
 }
 
-body {
-    background-color: $white !important;
-}
 
 // Dark Mode
 @media (prefers-color-scheme: dark) {
@@ -66,6 +70,7 @@ body {
         color: $flight;
     }
 
+    // Body
     body {
         background-color: $dark !important;
     }
